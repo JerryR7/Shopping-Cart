@@ -48,6 +48,8 @@
             <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
+        <script src="<?php echo base_url();?>assets/js/jquery-1.10.2.min.js"></script>
+
         <!-- GoTop -->
         <style type="text/css">
         #gotop {
@@ -60,8 +62,34 @@
             background: #777;
             color: white;
             cursor: pointer;
+            z-index: 1;
+            border-radius: 99em;
         }
         </style>
+
+        <script type="text/javascript">
+        $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({
+                    scrollTop:0
+                },1000);
+            });
+            $("#search_bottom").click(function(){
+                jQuery("html,body").animate({
+                    scrollTop:0
+                },1000);
+                $("#search").trigger("focus");
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300){
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+        </script>
+
     </head>
 <body>
     
@@ -91,20 +119,15 @@
 <!-- ========================================= FOOTER ========================================= -->
 <!-- ========================================= FOOTER : END ========================================= -->
 
-        <a href="javascript:undefined" id="gotop" title="回頁首">˄</a>
+        <a href="javascript:undefined" id="gotop" title="回頁首">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
 
         <?php
           foreach($view as $view):
             $this->load->view($view);
           endforeach;
         ?>
-
-        <?php
-          foreach($contain_view as $contain):
-            $this->load->view($contain);
-          endforeach;
-        ?>
-
    </div><!-- /.wrapper -->
 
     <!-- For demo purposes – can be removed on production -->

@@ -1,7 +1,7 @@
 <!-- ========================================= BEST SELLERS ========================================= -->
 <section id="bestsellers" class="color-bg wow fadeInUp">
     <div class="container">
-        <h1 class="section-title">Best Sellers</h1>
+        <h1 class="section-title">熱銷商品</h1>
 
         <div class="product-grid-holder medium">
             <div class="col-xs-12 col-md-7 no-margin">
@@ -25,11 +25,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -52,11 +52,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -79,11 +79,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -109,11 +109,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -136,11 +136,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -163,11 +163,11 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="single-product.html" class="le-button">Add to cart</a>
+                                    <a href="single-product.html" class="le-button">加入購物車</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-wishlist" href="#">加入追蹤</a>
+                                    <a class="btn-add-to-compare" href="#">加入比較</a>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                     </div>
                     <div class="prices text-right">
                         <div class="price-current inline">$1199.00</div>
-                        <a href="cart.html" class="le-button big inline">add to cart</a>
+                        <a href="cart.html" class="le-button big inline">加入購物車</a>
                     </div>
                 </div><!-- /.product-item-holder -->
             </div><!-- /.col -->

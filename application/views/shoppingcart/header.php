@@ -73,10 +73,10 @@
             <div class="top-cart-row-container">
     <div class="wishlist-compare-holder">
         <div class="wishlist ">
-            <a href="#"><i class="fa fa-heart"></i> wishlist <span class="value">(21)</span> </a>
+            <a href="#"><i class="fa fa-heart"></i> 追蹤商品 <span class="value">(21)</span> </a>
         </div>
         <div class="compare">
-            <a href="#"><i class="fa fa-exchange"></i> compare <span class="value">(2)</span> </a>
+            <a href="#"><i class="fa fa-exchange"></i> 比較商品 <span class="value">(2)</span> </a>
         </div>
     </div>
 
@@ -92,9 +92,9 @@
                 </div>
 
                 <div class="total-price-basket"> 
-                    <span class="lbl">your cart:</span>
+                    <span class="lbl">購物車:</span>
                     <span class="total-price">
-                        <span class="sign">$</span><span class="value">3219,00</span>
+                        <span class="sign">$</span><span class="value">219,00</span>
                     </span>
                 </div>
             </a>

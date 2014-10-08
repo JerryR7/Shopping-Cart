@@ -6,7 +6,7 @@
             <div class="col-xs-12  col-sm-4 no-margin-left">
                 <!-- ============================================================= FEATURED PRODUCTS ============================================================= -->
 <div class="widget">
-    <h2>Featured products</h2>
+    <h2>特色商品</h2>
     <div class="body">
         <ul>
             <li>
@@ -69,7 +69,7 @@
             <div class="col-xs-12 col-sm-4 ">
                 <!-- ============================================================= ON SALE PRODUCTS ============================================================= -->
 <div class="widget">
-    <h2>On-Sale Products</h2>
+    <h2>特價商品</h2>
     <div class="body">
         <ul>
             <li>
@@ -133,7 +133,7 @@
             <div class="col-xs-12 col-sm-4 ">
                 <!-- ============================================================= TOP RATED PRODUCTS ============================================================= -->
 <div class="widget">
-    <h2>Top Rated Products</h2>
+    <h2>人氣商品</h2>
     <div class="body">
         <ul>
             <li>
@@ -203,7 +203,7 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
                 <form role="form">
                     <input placeholder="Subscribe to our newsletter">
-                    <button class="le-button">Subscribe</button>
+                    <button class="le-button">訂閱</button>
                 </form>
             </div>
         </div><!-- /.container -->
@@ -264,7 +264,7 @@
                 <!-- ============================================================= LINKS FOOTER ============================================================= -->
 <div class="link-widget">
     <div class="widget">
-        <h3>Find it fast</h3>
+        <h3>商品分類</h3>
         <ul>
             <li><a href="category-grid.html">laptops &amp; computers</a></li>
             <li><a href="category-grid.html">Cameras &amp; Photography</a></li>
@@ -280,16 +280,16 @@
 
 <div class="link-widget">
     <div class="widget">
-        <h3>Information</h3>
+        <h3>購物導覽</h3>
         <ul>
-            <li><a href="category-grid.html">Find a Store</a></li>
-            <li><a href="category-grid.html">About Us</a></li>
-            <li><a href="category-grid.html">Contact Us</a></li>
-            <li><a href="category-grid.html">Weekly Deals</a></li>
+            <li><a href="category-grid.html">尋找商品</a></li>
+            <li><a href="category-grid.html">關於我們</a></li>
+            <li><a href="category-grid.html">聯絡我們</a></li>
+            <li><a href="category-grid.html">退貨/退款/換貨程序說明</a></li>
             <li><a href="category-grid.html">Gift Cards</a></li>
-            <li><a href="category-grid.html">Recycling Program</a></li>
-            <li><a href="category-grid.html">Community</a></li>
-            <li><a href="category-grid.html">Careers</a></li>
+            <li><a href="category-grid.html">FAQ常見問題</a></li>
+            <li><a href="category-grid.html">產品支援</a></li>
+            <li><a href="category-grid.html">額外提供服務</a></li>
 
         </ul>
     </div><!-- /.widget -->
@@ -297,15 +297,15 @@
 
 <div class="link-widget">
     <div class="widget">
-        <h3>Information</h3>
+        <h3>會員資訊</h3>
         <ul>
-            <li><a href="category-grid.html">My Account</a></li>
-            <li><a href="category-grid.html">Order Tracking</a></li>
-            <li><a href="category-grid.html">Wish List</a></li>
-            <li><a href="category-grid.html">Customer Service</a></li>
-            <li><a href="category-grid.html">Returns / Exchange</a></li>
+            <li><a href="category-grid.html">我的帳號</a></li>
+            <li><a href="category-grid.html">配送進度查詢</a></li>
+            <li><a href="category-grid.html">追蹤清單</a></li>
+            <li><a href="category-grid.html">客戶服務</a></li>
+            <li><a href="category-grid.html">網路訂單查詢</a></li>
             <li><a href="category-grid.html">FAQs</a></li>
-            <li><a href="category-grid.html">Product Support</a></li>
+            <li><a href="category-grid.html">產品支援</a></li>
             <li><a href="category-grid.html">Extended Service Plans</a></li>
         </ul>
     </div><!-- /.widget -->

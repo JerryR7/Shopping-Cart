@@ -3,9 +3,9 @@
     <div class="container">
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">首頁</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">Change Colors</a>
+                    <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">主題顏色</a>
 
                     <ul class="dropdown-menu" role="menu" >
                         <li role="presentation"><a role="menuitem" class="changecolor green-text" tabindex="-1" href="#" title="Green color">Green</a></li>
@@ -18,7 +18,7 @@
                 </li>
                 <li><a href="index.php?page=blog">Blog</a></li>
                 <li><a href="index.php?page=faq">FAQ</a></li>
-                <li><a href="index.php?page=contact">Contact</a></li>
+                <li><a href="index.php?page=contact">聯絡我們</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Pages</a>
                     <ul class="dropdown-menu" role="menu">
@@ -63,8 +63,8 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dollar (US)</a></li>
                     </ul>
                 </li>
-                <li><a href="authentication">Register</a></li>
-                <li><a href="authentication">Login</a></li>
+                <li><a href="authentication">註冊會員</a></li>
+                <li><a href="authentication">登入</a></li>
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->

@@ -22,7 +22,7 @@
                         terms and conditions apply
                     </div>
                     <div class="button-holder fadeInDown-3">
-                        <a href="single-product.html" class="big le-button ">shop now</a>
+                        <a href="single-product.html" class="big le-button ">馬上購買</a>
                     </div>
                 </div><!-- /.caption -->
             </div><!-- /.container-fluid -->
@@ -42,7 +42,7 @@
                         terms and conditions apply
                     </div>
                     <div class="button-holder fadeInDown-3">
-                        <a href="single-product.html" class="big le-button ">shop now</a>
+                        <a href="single-product.html" class="big le-button ">馬上購買</a>
                     </div>
                 </div><!-- /.caption -->
             </div><!-- /.container-fluid -->

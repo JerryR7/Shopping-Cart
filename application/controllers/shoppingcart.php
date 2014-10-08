@@ -22,6 +22,8 @@ class ShoppingCart extends CI_Controller {
       //   'banner/home_banners','shoppingcart/products_tab','shoppingcart/bestsellers','shoppingcart/recently_viewed','shoppingcart/top_brands','shoppingcart/footer'
       // ), 
     );
+    
     $this->load->view('template',$data);
+
 	}
 }
