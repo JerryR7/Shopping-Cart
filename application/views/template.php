@@ -17,13 +17,13 @@
         
         <!-- Customizable CSS -->
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css">
-        <link rel="stylesheet" href="<?php echo base_url();?>assets/css/green.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dark-green.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.carousel.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/animate.min.css">
 
         <!-- Demo Purpose Only. Should be removed in production -->
-        <link rel="stylesheet" href="assets/css/config.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>assets/css/config.css">
 
         <link href="<?php echo base_url();?>assets/css/green.css" rel="alternate stylesheet" title="Green color">
         <link href="<?php echo base_url();?>assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
@@ -89,6 +89,7 @@
             });
         });
         </script>
+        <!-- GoTop End-->
 
     </head>
 <body>

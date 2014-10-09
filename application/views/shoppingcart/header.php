@@ -5,7 +5,7 @@
         <div class="col-xs-12 col-md-3 logo-holder">
             <!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
-    <a href="http://localhost/~ibrahim/themeforest/HTML/mediacenter/upload/PHP/home">
+    <?php echo anchor('', '
         <!--<img alt="logo" src="assets/images/logo.svg" width="233" height="54"/>-->
         <!--<object id="sp" type="image/svg+xml" data="assets/images/logo.svg" width="233" height="54"></object>-->
         <svg width="233px" height="54px" viewBox="0 0 233 54" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
             <path fill="#ffffff" d=" M 137.58 37.63 C 141.09 35.82 145.16 36.85 148.82 37.59 C 148.82 38.98 148.80 40.38 148.79 41.78 C 145.51 43.89 141.25 45.34 137.54 43.42 C 135.23 42.33 135.28 38.72 137.58 37.63 Z" />
             <path class="logo-svg" d=" M 163.30 39.16 C 165.64 38.00 168.47 38.66 171.01 38.49 C 172.96 38.53 176.17 38.23 176.35 40.94 C 176.51 46.79 170.77 51.96 165.05 51.93 C 161.43 51.79 162.41 47.39 162.23 44.97 C 162.49 43.09 161.71 40.56 163.30 39.16 Z" />
         </svg>
-    </a>
+    ');?>
 </div><!-- /.logo -->
 <!-- ============================================================= LOGO : END ============================================================= -->     </div><!-- /.logo-holder -->
 

@@ -21,7 +21,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-01.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-01.jpg" />
                         </a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-02.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-02.jpg" />
                         </a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-03.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-03.jpg" />
                         </a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-04.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-04.jpg" />
                         </a>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-05.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-05.jpg" />
                         </a>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-06.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-06.jpg" />
                         </a>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-07.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-07.jpg" />
                         </a>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-08.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-08.jpg" />
                         </a>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-09.jpg" />
+                            <img alt="" src="<?php echo base_url();?>assets/images/blank.gif" data-echo="<?php echo base_url();?>assets/images/products/product-small-09.jpg" />
                         </a>
                     </div>
 
@@ -324,10 +324,10 @@
             <div class="col-xs-12 col-sm-6 no-margin">
                 <div class="payment-methods ">
                     <ul>
-                        <li><img alt="" src="assets/images/payments/payment-visa.png"></li>
-                        <li><img alt="" src="assets/images/payments/payment-master.png"></li>
-                        <li><img alt="" src="assets/images/payments/payment-paypal.png"></li>
-                        <li><img alt="" src="assets/images/payments/payment-skrill.png"></li>
+                        <li><img alt="" src="<?php echo base_url();?>assets/images/payments/payment-visa.png"></li>
+                        <li><img alt="" src="<?php echo base_url();?>assets/images/payments/payment-master.png"></li>
+                        <li><img alt="" src="<?php echo base_url();?>assets/images/payments/payment-paypal.png"></li>
+                        <li><img alt="" src="<?php echo base_url();?>assets/images/payments/payment-skrill.png"></li>
                     </ul>
                 </div><!-- /.payment-methods -->
             </div>

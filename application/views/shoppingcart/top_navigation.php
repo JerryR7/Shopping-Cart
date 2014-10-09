@@ -3,7 +3,7 @@
     <div class="container">
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
-                <li><a href="index.html">首頁</a></li>
+                <li><?php echo anchor('','首頁');?></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">主題顏色</a>
 
@@ -17,7 +17,7 @@
                     </ul>
                 </li>
                 <li><a href="index.php?page=blog">Blog</a></li>
-                <li><a href="index.php?page=faq">FAQ</a></li>
+                <li><?php echo anchor('shoppingcart/faq','FAQ');?></li>
                 <li><a href="index.php?page=contact">聯絡我們</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Pages</a>
