@@ -88,7 +88,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <div class="basket-item-count">
                     <span class="count">3</span>
-                    <img src="assets/images/icon-cart.png" alt="" />
+                    <img src="<?php echo base_url();?>assets/images/icon-cart.png" alt="" />
                 </div>
 
                 <div class="total-price-basket"> 

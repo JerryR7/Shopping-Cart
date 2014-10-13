@@ -16,10 +16,10 @@
                         <li role="presentation"><a role="menuitem" class="changecolor dark-green-text" tabindex="-1" href="#" title="Darkgreen color">Dark Green</a></li>
                     </ul>
                 </li>
-                <li><a href="index.php?page=blog">Blog</a></li>
+<!--                 <li><a href="index.php?page=blog">Blog</a></li> -->
                 <li><?php echo anchor('shoppingcart/faq','FAQ');?></li>
-                <li><a href="index.php?page=contact">聯絡我們</a></li>
-                <li class="dropdown">
+                <li><?php echo anchor('shoppingcart/contact','聯絡我們');?></li>
+<!--                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Pages</a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="index.html">Home</a></li>
@@ -39,13 +39,13 @@
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="authentication.html">Login/Register</a></li><li><a href="http://www.weidea.net">More</a></li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </div><!-- /.col -->
 
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul class="right">
-                <li class="dropdown">
+<!--                 <li class="dropdown">
                     <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-language">English</a>
                     <ul class="dropdown-menu" role="menu" >
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turkish</a></li>
@@ -62,9 +62,9 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indian Rupee (INR)</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dollar (US)</a></li>
                     </ul>
-                </li>
-                <li><a href="authentication">註冊會員</a></li>
-                <li><a href="authentication">登入</a></li>
+                </li> -->
+                <li><?php echo anchor('shoppingcart/auth', '註冊會員');?></li>
+                <li><?php echo anchor('shoppingcart/auth', '註冊會員');?></li>
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->
