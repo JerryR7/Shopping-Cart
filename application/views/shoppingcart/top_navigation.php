@@ -64,7 +64,7 @@
                     </ul>
                 </li> -->
                 <li><?php echo anchor('shoppingcart/auth', '註冊會員');?></li>
-                <li><?php echo anchor('shoppingcart/auth', '註冊會員');?></li>
+                <li><?php echo anchor('shoppingcart/auth', '登入');?></li>
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->
