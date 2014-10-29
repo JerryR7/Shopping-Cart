@@ -156,10 +156,10 @@
                     <div class="basket-item">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
-                                <a href="cart" class="le-button inverse">View cart</a>
+                                <?php echo anchor('shoppingcart/cart', '檢視購物車', 'class="le-button inverse"');?>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-                                <a href="checkout" class="le-button">Checkout</a>
+                                <?php echo anchor('shoppingcart/checkout', '結帳', 'class="le-button"');?>
                             </div>
                         </div>
                     </div>

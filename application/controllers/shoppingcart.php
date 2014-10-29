@@ -57,4 +57,24 @@ class ShoppingCart extends CI_Controller {
 			);
 		$this->load->view('template', $data);
 	}
+
+	public function cart()
+	{
+		$data = array(
+			'view' => array(
+				'shoppingcart/top_navigation','shoppingcart/header','cart/cart','shoppingcart/footer'
+				),
+			);
+		$this->load->view('template', $data);
+	}
+
+	public function checkout()
+	{
+		$data = array(
+			'view' => array(
+				'shoppingcart/top_navigation','shoppingcart/header','cart/checkout','shoppingcart/footer'
+				),
+			);
+		$this->load->view('template', $data);
+	}
 }
