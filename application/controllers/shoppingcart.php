@@ -16,7 +16,15 @@ class ShoppingCart extends CI_Controller {
 			'item_per_page' => 4,
 			'total_pages' => 2,
 			'view' => array(
-				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/homepage2','banner/home_banners','shoppingcart/products_tab','shoppingcart/bestsellers','shoppingcart/recently_viewed','shoppingcart/top_brands','shoppingcart/footer'
+				'shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'shoppingcart/homepage2',
+				'banner/home_banners',
+				'shoppingcart/products_tab',
+				'shoppingcart/bestsellers',
+				'shoppingcart/recently_viewed',
+				'shoppingcart/top_brands',
+				'shoppingcart/footer'
 				),
 			// 'contain_view' => array(
 			// 	'banner/home_banners','shoppingcart/products_tab','shoppingcart/bestsellers','shoppingcart/recently_viewed','shoppingcart/top_brands','shoppingcart/footer'

@@ -14,7 +14,7 @@ class Auth extends CI_Controller {
 
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
-		$this->lang->load('auth');
+		$this->lang->load('auth','zh_tw');
 		$this->load->helper('language');
 	}
 
@@ -44,7 +44,18 @@ class Auth extends CI_Controller {
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
 
-			$this->_render_page('auth/index', $this->data);
+			$this->data['view'] = array('shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'shoppingcart/homepage2',
+				'banner/home_banners',
+				'shoppingcart/products_tab',
+				'shoppingcart/bestsellers',
+				'shoppingcart/recently_viewed',
+				'shoppingcart/top_brands',
+				'shoppingcart/footer'
+			);
+
+			$this->_render_page('template', $this->data);
 		}
 	}
 
@@ -93,8 +104,13 @@ class Auth extends CI_Controller {
 				'id' => 'password',
 				'type' => 'password',
 			);
+			$this->data['view'] = array('shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'auth/authentication',
+				'shoppingcart/footer'
+			);
 
-			$this->_render_page('auth/login', $this->data);
+			$this->_render_page('template', $this->data);
 		}
 	}
 
@@ -210,7 +226,12 @@ class Auth extends CI_Controller {
 
 			//set any errors and display the form
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-			$this->_render_page('auth/forgot_password', $this->data);
+			$this->data['view'] = array('shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'auth/forgot_password2',
+				'shoppingcart/footer'
+			);
+			$this->_render_page('template', $this->data);
 		}
 		else
 		{
