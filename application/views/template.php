@@ -55,15 +55,15 @@
         #gotop {
             display: none;
             position: fixed;
-            right: 20px;
-            bottom: 20px;
+            right: 2%;
+            bottom: 5%;
             padding: 10px 15px;
             font-size: 20px;
-            background: #777;
+/*            background: #777;*/
             color: white;
             cursor: pointer;
             z-index: 1;
-            border-radius: 99em;
+            /*border-radius: 99em;*/
         }
         </style>
 
@@ -120,9 +120,9 @@
 <!-- ========================================= FOOTER ========================================= -->
 <!-- ========================================= FOOTER : END ========================================= -->
 
-        <a href="javascript:undefined" id="gotop" title="回頁首">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
+        <button id="gotop" class="le-button" title="回頁首" style="opacity: 0.8">
+            <span class="fa fa-chevron-up"></span>
+        </button>
 
         <?php
           foreach($view as $view):

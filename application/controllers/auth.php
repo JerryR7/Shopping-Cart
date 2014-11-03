@@ -99,10 +99,61 @@ class Auth extends CI_Controller {
 				'id' => 'identity',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('identity'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['password'] = array('name' => 'password',
 				'id' => 'password',
 				'type' => 'password',
+				'class' => 'le-input form-control',
+			);
+			$this->data['first_name'] = array(
+				'name'  => 'first_name',
+				'id'    => 'first_name',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('first_name'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['last_name'] = array(
+				'name'  => 'last_name',
+				'id'    => 'last_name',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('last_name'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['email'] = array(
+				'name'  => 'email',
+				'id'    => 'email',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('email'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['company'] = array(
+				'name'  => 'company',
+				'id'    => 'company',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('company'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['phone'] = array(
+				'name'  => 'phone',
+				'id'    => 'phone',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('phone'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['password'] = array(
+				'name'  => 'password',
+				'id'    => 'password',
+				'type'  => 'password',
+				'value' => $this->form_validation->set_value('password'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['password_confirm'] = array(
+				'name'  => 'password_confirm',
+				'id'    => 'password_confirm',
+				'type'  => 'password',
+				'value' => $this->form_validation->set_value('password_confirm'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['view'] = array('shoppingcart/top_navigation',
 				'shoppingcart/header',
@@ -228,7 +279,7 @@ class Auth extends CI_Controller {
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 			$this->data['view'] = array('shoppingcart/top_navigation',
 				'shoppingcart/header',
-				'auth/forgot_password2',
+				'auth/forgot_password',
 				'shoppingcart/footer'
 			);
 			$this->_render_page('template', $this->data);
@@ -437,10 +488,10 @@ class Auth extends CI_Controller {
 	{
 		$this->data['title'] = "Create User";
 
-		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
-		{
-			redirect('auth', 'refresh');
-		}
+		// if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
+		// {
+		// 	redirect('auth', 'refresh');
+		// }
 
 		$tables = $this->config->item('tables','ion_auth');
 
@@ -484,45 +535,69 @@ class Auth extends CI_Controller {
 				'id'    => 'first_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('first_name'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['last_name'] = array(
 				'name'  => 'last_name',
 				'id'    => 'last_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('last_name'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['email'] = array(
 				'name'  => 'email',
 				'id'    => 'email',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('email'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['company'] = array(
 				'name'  => 'company',
 				'id'    => 'company',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('company'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['phone'] = array(
 				'name'  => 'phone',
 				'id'    => 'phone',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('phone'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['password'] = array(
 				'name'  => 'password',
 				'id'    => 'password',
 				'type'  => 'password',
 				'value' => $this->form_validation->set_value('password'),
+				'class' => 'le-input form-control',
 			);
 			$this->data['password_confirm'] = array(
 				'name'  => 'password_confirm',
 				'id'    => 'password_confirm',
 				'type'  => 'password',
 				'value' => $this->form_validation->set_value('password_confirm'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['identity'] = array('name' => 'identity',
+				'id' => 'identity',
+				'type' => 'text',
+				'value' => $this->form_validation->set_value('identity'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['password'] = array('name' => 'password',
+				'id' => 'password',
+				'type' => 'password',
+				'class' => 'le-input form-control',
+			);
+			$this->data['view'] = array('shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'auth/authentication',
+				'shoppingcart/footer'
 			);
 
-			$this->_render_page('auth/create_user', $this->data);
+			$this->_render_page('template', $this->data);
+
 		}
 	}
 

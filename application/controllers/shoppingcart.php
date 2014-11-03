@@ -8,6 +8,7 @@ class ShoppingCart extends CI_Controller {
 		$this->load->helper(array('url','form'));
 		// $this->load->library(array('udp_cart'));
 		// $this->load->model('shopcart_model');
+		$this->load->library('ion_auth');
 	}
 
 	public function index()

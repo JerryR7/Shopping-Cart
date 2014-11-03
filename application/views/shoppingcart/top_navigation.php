@@ -63,8 +63,17 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dollar (US)</a></li>
                     </ul>
                 </li> -->
-                <li><?php echo anchor('auth', '註冊會員');?></li>
-                <li><?php echo anchor('auth', '登入');?></li>
+                <?php 
+                if (!$this->ion_auth->logged_in()) {
+                ?>
+                <li><?php echo anchor('auth/create_user', '註冊會員');?></li>
+                <li><?php echo anchor('auth/login', '登入');?></li>
+                <?php }else{ ?>
+                <li><?php echo $user = $this->ion_auth->user()->row()->username;?></li>
+                <li><a href="#" title="訂單資訊">訂單資訊</a></li>
+                <li><a href="#" title="後臺">後臺</a></li>
+                <li><?php echo anchor('auth/logout', '登出');?></li>
+                <?php } ?> 
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->

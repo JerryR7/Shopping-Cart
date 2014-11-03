@@ -19,15 +19,17 @@
 						</div>
 					</div>
 
+					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+
 					<?php echo form_open("auth/login", array('role'=>'form', 'class'=>'login-form cf-style-1'));?>
 						<div class="field-row">
                             <label><?php echo lang('login_identity_label', 'identity');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('identity');?>">
+                            <?php echo form_input($identity);?>
                         </div><!-- /.field-row -->
 
                         <div class="field-row">
                             <label><?php echo lang('login_password_label', 'password');?></label>
-                            <input type="password" class="le-input" value="<?php echo set_value('password');?>">
+                            <?php echo form_input($password);?>
                         </div><!-- /.field-row -->
 
                         <div class="field-row clearfix">
@@ -52,40 +54,42 @@
 					<h2 class="bordered">註冊帳號</h2>
 					<p>註冊一個屬於您的帳號</p>
 
+					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+
 					<?php echo form_open("auth/create_user",array('role'=>'form', 'class'=>'register-form cf-style-1'));?>
 						<div class="field-row">
                             <label><?php echo lang('create_user_lname_label', 'last_name');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('last_name');?>">
+                            <?php echo form_input($last_name);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_fname_label', 'first_name');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('first_name');?>">
+                            <?php echo form_input($first_name);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_company_label', 'company');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('company');?>">
+                            <?php echo form_input($company);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_email_label', 'email');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('email');?>">
+                            <?php echo form_input($email);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_phone_label', 'phone');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('phone');?>">
+                            <?php echo form_input($phone);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_password_label', 'password');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('password');?>">
+                            <?php echo form_input($password);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_password_confirm_label', 'password_confirm');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('password_confirm');?>">
+                            <?php echo form_input($password_confirm);?>
                         </div><!-- /.field-row -->
 
                         <div class="buttons-holder">
