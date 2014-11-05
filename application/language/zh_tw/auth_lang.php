@@ -25,6 +25,8 @@ $lang['login_password_label']  = '密碼:';
 $lang['login_remember_label']  = '記住我:';
 $lang['login_submit_btn']      = '登入';
 $lang['login_forgot_password'] = '忘記密碼?';
+$lang['login_validation_identity_label']  = '電子郵件/帳號';
+$lang['login_validation_password_label']  = '密碼';
 
 // Index
 $lang['index_heading']           = '使用者資訊';
@@ -63,6 +65,7 @@ $lang['create_user_submit_btn']                        = '建立帳號';
 $lang['create_user_validation_fname_label']            = '名字';
 $lang['create_user_validation_lname_label']            = '姓氏';
 $lang['create_user_validation_email_label']            = '電子郵件';
+$lang['create_user_validation_phone_label']            = '電話';
 $lang['create_user_validation_phone1_label']           = '聯絡電話一';
 $lang['create_user_validation_phone2_label']           = '聯絡電話二';
 $lang['create_user_validation_phone3_label']           = '聯絡電話三';

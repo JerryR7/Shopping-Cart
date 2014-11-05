@@ -11,7 +11,7 @@
 					<div class="social-auth-buttons">
 						<div class="row">
 							<div class="col-md-6">
-								<button class="btn-block btn-lg btn btn-facebook"><i class="fa fa-facebook"></i> Facebook 登入</button>
+								<?php echo anchor('auth/loginfacebook', '<i class="fa fa-facebook"></i> Facebook 登入', 'class="btn-block btn-lg btn btn-facebook"');?>
 							</div>
 							<div class="col-md-6">
 								<button class="btn-block btn-lg btn btn-twitter"><i class="fa fa-twitter"></i> Twitter 登入</button>
@@ -19,7 +19,11 @@
 						</div>
 					</div>
 
+                    <?php
+                    if ($this->router->fetch_method() == 'login' && !empty($message)) {
+                    ?>
 					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+					<?php } ?>
 
 					<?php echo form_open("auth/login", array('role'=>'form', 'class'=>'login-form cf-style-1'));?>
 						<div class="field-row">
@@ -54,7 +58,11 @@
 					<h2 class="bordered">註冊帳號</h2>
 					<p>註冊一個屬於您的帳號</p>
 
+                    <?php
+                    if ($this->router->fetch_method() == 'create_user' && !empty($message)) {
+                    ?>
 					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+					<?php } ?>
 
 					<?php echo form_open("auth/create_user",array('role'=>'form', 'class'=>'register-form cf-style-1'));?>
 						<div class="field-row">

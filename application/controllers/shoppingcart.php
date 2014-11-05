@@ -9,6 +9,8 @@ class ShoppingCart extends CI_Controller {
 		// $this->load->library(array('udp_cart'));
 		// $this->load->model('shopcart_model');
 		$this->load->library('ion_auth');
+		
+		$this->load->library('Facebook_ion_auth');
 	}
 
 	public function index()

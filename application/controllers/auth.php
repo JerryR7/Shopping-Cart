@@ -13,9 +13,14 @@ class Auth extends CI_Controller {
 		$this->load->database();
 
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
-
+        
+        $this->lang->load('form_validation','zh_tw');
 		$this->lang->load('auth','zh_tw');
+		$this->lang->load('ion_auth','zh_tw');
 		$this->load->helper('language');
+
+		$this->load->library('Facebook_ion_auth');
+		$this->load->library('session');
 	}
 
 	//redirect if needed, otherwise display the user list
@@ -57,6 +62,11 @@ class Auth extends CI_Controller {
 
 			$this->_render_page('template', $this->data);
 		}
+
+		if (isset($_GET['code']))
+		{
+			$this->facebook_ion_auth->login();
+		}
 	}
 
 	//log the user in
@@ -65,8 +75,8 @@ class Auth extends CI_Controller {
 		$this->data['title'] = "Login";
 
 		//validate form input
-		$this->form_validation->set_rules('identity', 'Identity', 'required');
-		$this->form_validation->set_rules('password', 'Password', 'required');
+		$this->form_validation->set_rules('identity', $this->lang->line('login_validation_identity_label'), 'required');
+		$this->form_validation->set_rules('password', $this->lang->line('login_validation_password_label'), 'required');
 
 		if ($this->form_validation->run() == true)
 		{
@@ -896,6 +906,11 @@ class Auth extends CI_Controller {
 		$view_html = $this->load->view($view, $this->viewdata, $render);
 
 		if (!$render) return $view_html;
+	}
+
+	function loginfacebook()
+	{
+		$this->facebook_ion_auth->login();
 	}
 
 }

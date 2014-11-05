@@ -105,7 +105,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
+                                    <img alt="" src="<?php echo base_url();?>assets/images/products/product-small-01.jpg" />
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
@@ -122,7 +122,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
+                                    <img alt="" src="<?php echo base_url();?>assets/images/products/product-small-01.jpg" />
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
@@ -139,7 +139,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="assets/images/products/product-small-01.jpg" />
+                                    <img alt="" src="<?php echo base_url();?>assets/images/products/product-small-01.jpg" />
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
