@@ -45,7 +45,7 @@ class Facebook_ion_auth {
 	       						.$this->app_id
 	       						."&redirect_uri=".urlencode($this->my_url)
 	       						."&state=".$this->CI->session->userdata('state').'&scope='.$this->scope;
-echo $url_to_redirect;
+
 	       	redirect($url_to_redirect);
 
 	   	} else {
@@ -70,14 +70,14 @@ echo $url_to_redirect;
 				$graph_url = "https://graph.facebook.com/me?access_token=".$params['access_token'];
 
 				$user = json_decode(file_get_contents($graph_url));
-print_r($user);
+
 				// check if this user is already registered
-				// if(!$this->CI->ion_auth_model->identity_check($user->email)){
-				// 	$name = explode(" ", $user->name);
-				// 	$register = $this->CI->ion_auth->register($user->username, 'facebookdoesnothavepass123^&*%', $user->email, array('first_name' => $name[0], 'last_name' => $name[1]));
-				// } else {
-				// 	$login = $this->CI->ion_auth->login($user->email, 'facebookdoesnothavepass123^&*%', 1);
-				// }
+				if(!$this->CI->ion_auth_model->identity_check($user->email)){
+					$username = $user->name;
+					$register = $this->CI->ion_auth->register($username, 'facebookdoesnothavepass123^&*%', $user->email, $user->first_name, $user->last_name);
+				} else {
+					$login = $this->CI->ion_auth->login($user->email, 'facebookdoesnothavepass123^&*%', 1);
+				}
 
 				return true;
 		    }

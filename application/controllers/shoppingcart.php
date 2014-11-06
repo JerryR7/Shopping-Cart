@@ -15,6 +15,12 @@ class ShoppingCart extends CI_Controller {
 
 	public function index()
 	{
+
+		if (isset($_GET['code']))
+		{
+			$this->facebook_ion_auth->login();
+		}
+		
 		$data = array(
 			'item_per_page' => 4,
 			'total_pages' => 2,

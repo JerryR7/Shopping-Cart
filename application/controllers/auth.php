@@ -62,11 +62,6 @@ class Auth extends CI_Controller {
 
 			$this->_render_page('template', $this->data);
 		}
-
-		if (isset($_GET['code']))
-		{
-			$this->facebook_ion_auth->login();
-		}
 	}
 
 	//log the user in
