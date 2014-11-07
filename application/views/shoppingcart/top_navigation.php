@@ -66,7 +66,7 @@
                 <?php 
                 if (!$this->ion_auth->logged_in()) {
                 ?>
-                <li><?php echo anchor('auth/create_user', '註冊會員');?></li>
+                <li><?php echo anchor('auth/login', '註冊會員');?></li>
                 <li><?php echo anchor('auth/login', '登入');?></li>
                 <?php }else{ ?>
                 <li><?php echo $user = $this->ion_auth->user()->row()->username;?></li>

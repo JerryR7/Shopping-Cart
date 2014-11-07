@@ -22,17 +22,22 @@
                     <h2 class="bordered"><?php echo lang('forgot_password_heading');?></h2>
                     <p><?php echo sprintf(lang('forgot_password_subheading'), $identity_label);?></p> <br />
 
-					<form role="form" class="login-form cf-style-1">
+                    <?php
+                    if ($this->router->fetch_method() == 'forgot_password' && !empty($message)) {
+                    ?>
+					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+					<?php } ?>
+
 					<?php echo form_open("auth/forgot_password", array('role'=>'form', 'class'=>'login-form cf-style-1'));?>
 						<div class="field-row">
                             <label for="email"><?php echo sprintf(lang('forgot_password_email_label'), $identity_label);?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('email');?>">
+                            <?php echo form_input($email);?>
                         </div><!-- /.field-row -->
 
                         <div class="buttons-holder">
                             <button type="submit" class="le-button huge">送出</button>
                         </div><!-- /.buttons-holder -->
-					</form><!-- /.cf-style-1 -->
+					<?php echo form_close();?><!-- /.cf-style-1 -->
 
 				</section><!-- /.sign-in -->
 			</div><!-- /.col -->
@@ -42,46 +47,52 @@
 					<h2 class="bordered">註冊帳號</h2>
 					<p>註冊一個屬於您的帳號</p>
 
+                    <?php
+                    if ($this->router->fetch_method() == 'create_user' && !empty($message)) {
+                    ?>
+					<div class="alert alert-danger" role="alert" id="infoMessage"><?php echo $message;?></div>
+					<?php } ?>
+
 					<?php echo form_open("auth/create_user",array('role'=>'form', 'class'=>'register-form cf-style-1'));?>
 						<div class="field-row">
                             <label><?php echo lang('create_user_lname_label', 'last_name');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('last_name');?>">
+                            <?php echo form_input($last_name);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_fname_label', 'first_name');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('first_name');?>">
+                            <?php echo form_input($first_name);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_company_label', 'company');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('company');?>">
+                            <?php echo form_input($company);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_email_label', 'email');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('email');?>">
+                            <?php echo form_input($email);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_phone_label', 'phone');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('phone');?>">
+                            <?php echo form_input($phone);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_password_label', 'password');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('password');?>">
+                            <?php echo form_input($password);?>
                         </div><!-- /.field-row -->
 
 						<div class="field-row">
                             <label><?php echo lang('create_user_password_confirm_label', 'password_confirm');?></label>
-                            <input type="text" class="le-input" value="<?php echo set_value('password_confirm');?>">
+                            <?php echo form_input($password_confirm);?>
                         </div><!-- /.field-row -->
 
                         <div class="buttons-holder">
                             <button type="submit" class="le-button huge">建立帳號</button>
                         </div><!-- /.buttons-holder -->
-					</form>
+					<?php echo form_close();?>
 
 					<h2 class="semi-bold">現在註冊，您能夠享有下列服務 :</h2>
 

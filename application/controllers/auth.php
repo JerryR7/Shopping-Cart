@@ -35,7 +35,7 @@ class Auth extends CI_Controller {
 		elseif (!$this->ion_auth->is_admin()) //remove this elseif if you want to enable this for non-admins
 		{
 			//redirect them to the home page because they must be an administrator to view this
-			return show_error('You must be an administrator to view this page.');
+			redirect('/', 'refresh');
 		}
 		else
 		{
@@ -68,6 +68,11 @@ class Auth extends CI_Controller {
 	function login()
 	{
 		$this->data['title'] = "Login";
+
+		if ($this->ion_auth->logged_in() && !$this->ion_auth->is_admin())
+		{
+			redirect('auth', 'refresh');
+		}
 
 		//validate form input
 		$this->form_validation->set_rules('identity', $this->lang->line('login_validation_identity_label'), 'required');
@@ -254,6 +259,11 @@ class Auth extends CI_Controller {
 	//forgot password
 	function forgot_password()
 	{  
+		if ($this->ion_auth->logged_in() && !$this->ion_auth->is_admin())
+		{
+			redirect('auth', 'refresh');
+		}
+
 		//setting validation rules by checking wheather identity is username or email
 		if($this->config->item('identity', 'ion_auth') == 'username' )
 		{
@@ -279,6 +289,58 @@ class Auth extends CI_Controller {
 			{
 				$this->data['identity_label'] = $this->lang->line('forgot_password_email_identity_label');
 			}
+
+			//display the create user form
+			//set the flash data error message if there is one
+			$this->data['first_name'] = array(
+				'name'  => 'first_name',
+				'id'    => 'first_name',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('first_name'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['last_name'] = array(
+				'name'  => 'last_name',
+				'id'    => 'last_name',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('last_name'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['email'] = array(
+				'name'  => 'email',
+				'id'    => 'email',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('email'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['company'] = array(
+				'name'  => 'company',
+				'id'    => 'company',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('company'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['phone'] = array(
+				'name'  => 'phone',
+				'id'    => 'phone',
+				'type'  => 'text',
+				'value' => $this->form_validation->set_value('phone'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['password'] = array(
+				'name'  => 'password',
+				'id'    => 'password',
+				'type'  => 'password',
+				'value' => $this->form_validation->set_value('password'),
+				'class' => 'le-input form-control',
+			);
+			$this->data['password_confirm'] = array(
+				'name'  => 'password_confirm',
+				'id'    => 'password_confirm',
+				'type'  => 'password',
+				'value' => $this->form_validation->set_value('password_confirm'),
+				'class' => 'le-input form-control',
+			);
 
 			//set any errors and display the form
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
@@ -493,10 +555,10 @@ class Auth extends CI_Controller {
 	{
 		$this->data['title'] = "Create User";
 
-		// if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
-		// {
-		// 	redirect('auth', 'refresh');
-		// }
+		if ($this->ion_auth->logged_in() && !$this->ion_auth->is_admin())
+		{
+			redirect('auth', 'refresh');
+		}
 
 		$tables = $this->config->item('tables','ion_auth');
 
