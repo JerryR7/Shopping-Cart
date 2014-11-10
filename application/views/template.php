@@ -47,9 +47,10 @@
             <script src="assets/js/html5shiv.js"></script>
             <script src="assets/js/respond.min.js"></script>
         <![endif]-->
-
         <script src="<?php echo base_url();?>assets/js/jquery-1.10.2.min.js"></script>
-
+        <script src="<?php echo base_url();?>assets/js/sweet-alert/sweet-alert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/js/sweet-alert/sweet-alert.css">
+        <script src="<?php echo base_url();?>assets/js/options.js"></script>
         <!-- GoTop -->
         <style type="text/css">
         #gotop {
@@ -66,30 +67,6 @@
             /*border-radius: 99em;*/
         }
         </style>
-
-        <script type="text/javascript">
-        $(function(){
-            $("#gotop").click(function(){
-                jQuery("html,body").animate({
-                    scrollTop:0
-                },1000);
-            });
-            $("#search_bottom").click(function(){
-                jQuery("html,body").animate({
-                    scrollTop:0
-                },1000);
-                $("#search").trigger("focus");
-            });
-            $(window).scroll(function() {
-                if ( $(this).scrollTop() > 300){
-                    $('#gotop').fadeIn("fast");
-                } else {
-                    $('#gotop').stop().fadeOut("fast");
-                }
-            });
-        });
-        </script>
-        <!-- GoTop End-->
 
     </head>
 <body>

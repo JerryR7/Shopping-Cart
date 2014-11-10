@@ -232,9 +232,14 @@ class Auth extends CI_Controller {
 				'type'  => 'hidden',
 				'value' => $user->id,
 			);
+			$this->data['view'] = array('shoppingcart/top_navigation',
+				'shoppingcart/header',
+				'auth/change_password',
+				'shoppingcart/footer'
+			);
 
 			//render
-			$this->_render_page('auth/change_password', $this->data);
+			$this->_render_page('template', $this->data);
 		}
 		else
 		{
