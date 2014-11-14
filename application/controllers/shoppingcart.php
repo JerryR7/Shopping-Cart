@@ -7,7 +7,7 @@ class ShoppingCart extends CI_Controller {
 		parent::__construct();
 		$this->load->helper(array('url','form'));
 		// $this->load->library(array('udp_cart'));
-		// $this->load->model('shopcart_model');
+		$this->load->model('shoppingcart_model');
 		$this->load->library('ion_auth');
 		
 		$this->load->library('Facebook_ion_auth');
@@ -24,6 +24,9 @@ class ShoppingCart extends CI_Controller {
 		$data = array(
 			'item_per_page' => 4,
 			'total_pages' => 2,
+
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+
 			'view' => array(
 				'shoppingcart/top_navigation',
 				'shoppingcart/header',
@@ -39,6 +42,9 @@ class ShoppingCart extends CI_Controller {
 			// 	'banner/home_banners','shoppingcart/products_tab','shoppingcart/bestsellers','shoppingcart/recently_viewed','shoppingcart/top_brands','shoppingcart/footer'
 			// 	), 
 			);
+		foreach ($data['products_tab']['category_id'] as $id) {
+			$data['category'] = $this->shoppingcart_model->products_tab($id);
+		}
 
 		$this->load->view('template', $data);
 	}
@@ -90,6 +96,28 @@ class ShoppingCart extends CI_Controller {
 		$data = array(
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','cart/checkout','shoppingcart/footer'
+				),
+			);
+		$this->load->view('template', $data);
+	}
+
+	public function category()
+	{
+		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'view' => array(
+				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/category','shoppingcart/footer'
+				),
+			);
+		$this->load->view('template', $data);
+	}
+
+	public function category2()
+	{
+		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'view' => array(
+				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/category2','shoppingcart/footer'
 				),
 			);
 		$this->load->view('template', $data);
