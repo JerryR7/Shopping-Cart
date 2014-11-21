@@ -1,7 +1,7 @@
 <!-- ============================================================= HEADER ============================================================= -->
 <header class="no-padding-bottom header-alt">
     <div class="container no-padding">
-        
+
         <div class="col-xs-12 col-md-3 logo-holder">
             <!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
@@ -54,15 +54,15 @@
 
                     <ul class="dropdown-menu" role="menu" >
                         <li role="presentation"><?php echo anchor('shoppingcart/category', 'laptops', 'role="menuitem" tabindex="-1"'); ?></li>
-                        <li role="presentation"><?php echo anchor('shoppingcart/category', 'tv & audio', 'role="menuitem" tabindex="-1"'); ?></li>
-                        <li role="presentation"><?php echo anchor('shoppingcart/category', 'gadgets', 'role="menuitem" tabindex="-1"'); ?></li>
-                        <li role="presentation"><?php echo anchor('shoppingcart/category', 'cameras', 'role="menuitem" tabindex="-1"'); ?></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">tv & audio</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">gadgets</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">cameras</a></li>
 
                     </ul>
                 </li>
             </ul>
 
-            <a class="search-button" href="#" ></a>    
+            <a class="search-button" href="#" ></a>
 
         </div>
     </form>
@@ -82,16 +82,16 @@
 
     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
     <div class="top-cart-holder dropdown animate-dropdown">
-        
+
         <div class="basket">
-            
+
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <div class="basket-item-count">
                     <span class="count">3</span>
                     <img src="<?php echo base_url();?>assets/images/icon-cart.png" alt="" />
                 </div>
 
-                <div class="total-price-basket"> 
+                <div class="total-price-basket">
                     <span class="lbl">購物車:</span>
                     <span class="total-price">
                         <span class="sign">$</span><span class="value">219,00</span>
@@ -172,7 +172,7 @@
 <!-- ============================================================= SHOPPING CART DROPDOWN : END ============================================================= -->       </div><!-- /.top-cart-row -->
 
     </div><!-- /.container -->
-    
+
     <!-- ========================================= NAVIGATION ========================================= -->
 <nav id="top-megamenu-nav" class="megamenu-vertical animate-dropdown">
     <div class="container">
@@ -188,16 +188,16 @@
             <div class="collapse navbar-collapse" id="mc-horizontal-menu-collapse">
                 <ul class="nav navbar-nav">
                 <?php foreach ($products_tab as $products_tab):?>
+                    <?php if(count($products_tab->category) != 0):?>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><?php echo $products_tab->category_title;?></a>
                         <ul class="dropdown-menu">
-                        <?php foreach ($category as $category1):?>
-                            <?php if ($products_tab->category_id == $category1->products_tab_id):?>
-                                <li><?php echo  anchor('', $category1->category_title);?></li>
-                            <?php endif;?>
+                        <?php foreach($products_tab->category as $category):?>
+                            <li><?php echo anchor('',$category->category_title);?></li>
                         <?php endforeach;?>
                         </ul>
                     </li>
+                    <?php endif;?>
                 <?php endforeach;?>
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
@@ -205,6 +205,6 @@
     </div><!-- /.container -->
 </nav><!-- /.megamenu-vertical -->
 <!-- ========================================= NAVIGATION : END ========================================= -->
-    
+
 </header>
-<!-- ============================================================= HEADER : END ============================================================= -->       
+<!-- ============================================================= HEADER : END ============================================================= -->

@@ -26,6 +26,7 @@ class ShoppingCart extends CI_Controller {
 			'total_pages' => 2,
 
 			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
 
 			'view' => array(
 				'shoppingcart/top_navigation',
@@ -42,9 +43,6 @@ class ShoppingCart extends CI_Controller {
 			// 	'banner/home_banners','shoppingcart/products_tab','shoppingcart/bestsellers','shoppingcart/recently_viewed','shoppingcart/top_brands','shoppingcart/footer'
 			// 	), 
 			);
-		foreach ($data['products_tab']['category_id'] as $id) {
-			$data['category'] = $this->shoppingcart_model->products_tab($id);
-		}
 
 		$this->load->view('template', $data);
 	}
@@ -52,6 +50,9 @@ class ShoppingCart extends CI_Controller {
 	public function faq()
 	{
 		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/faq','shoppingcart/footer'
 				),
@@ -63,6 +64,9 @@ class ShoppingCart extends CI_Controller {
 	public function contact()
 	{
 		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/contact','shoppingcart/footer'
 				),
@@ -74,6 +78,9 @@ class ShoppingCart extends CI_Controller {
 	public function auth()
 	{
 		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/authentication','shoppingcart/footer'
 				),
@@ -84,6 +91,9 @@ class ShoppingCart extends CI_Controller {
 	public function cart()
 	{
 		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','cart/cart','shoppingcart/footer'
 				),
@@ -94,6 +104,9 @@ class ShoppingCart extends CI_Controller {
 	public function checkout()
 	{
 		$data = array(
+			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','cart/checkout','shoppingcart/footer'
 				),
@@ -105,6 +118,8 @@ class ShoppingCart extends CI_Controller {
 	{
 		$data = array(
 			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/category','shoppingcart/footer'
 				),
@@ -116,6 +131,8 @@ class ShoppingCart extends CI_Controller {
 	{
 		$data = array(
 			'products_tab' => $this->shoppingcart_model->products_tab(),
+			'category' => $this->shoppingcart_model->category(),
+			
 			'view' => array(
 				'shoppingcart/top_navigation','shoppingcart/header','shoppingcart/category2','shoppingcart/footer'
 				),
